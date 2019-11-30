@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link href="https://fonts.googleapis.com/css?family=Damion|Great+Vibes|Lato|Rock+Salt|Tangerine:700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./Pagina.css">
+	<title>Velvet Room</title>
+</head>
+
+<body>
+	<audio src="../Musicas/1-08. The Poem of Everyone’s Souls.mp3" autoplay loop>
+	dbhsdids</audio>
+	<!-- <header class="cabecalho">
+		<div class="menu">
+			<img src="./Imagens/hat.png" class='hat' alt="Logo dos Phantom Thieves">
+			<img src="./Imagens/grupo-semfundo.png" class='grupo' alt="Grupo Phantom Thieves" onclick="">
+			<ul class="lista">
+				<li><a href="#">Cadastrar-se</a></li>
+				<li><a href="#">Login</a></li>
+			</ul>
+		</div>
+	</header> -->
+	<div class="centro">
+		<div class='box' style="display: none;" id="box">
+			<img src="" alt="" id="imagem" class="imagem">
+			<div id="text" class="text"></div>
+		</div>
+		<button onclick="persona()" class="botao" id="botao">I am thou...
+			Thou art I... <br>
+			From the sea of thy soul, I come...</button>
+	</div>
+</body>
+
+</html>
+<script>
+	function persona() {
+		box.style.display = 'block';
+		botao.style.display = 'none';
+		var number = parseInt(Math.random() * 6 + 1);
+		if (number == 1) {
+			imagem.src = '../Imagens/Personas/Arsene.png';
+			imagem.style.height = '46vw';
+			text.innerHTML = `<h1 class='nome1'>Arsene</h1> <h4>Arcana  Fool</h4>
+			Arsene é inspirado em um Filme/Personagem chamado de "Arsène Lupin – O 
+			Ladrão Mais Charmoso do Mundo (2004)" criado por Maurice LeBlanc, 
+			Ele aparece em qualquer lugar e é um mestre dos disfarces,
+			Conhecido em ajudar cidadãos cumpridores da lei. <br>
+ 			Tinha como alvo criminosos e pessoas piores que ele, se fazendo um anti-heroi. 
+			Ele pode ter sido inspirado em um anarquista Francês chamado Marius Jacob. <br>
+				<h5>Sobre Arsène Lupin</h5> 
+			Sua harmoniosa infância termina abruptamente com a morte de seu pai, um notório 
+			ladrão. 
+			Vinte anos depois, seguindo a carreira do pai, torna-se um ladrão despreocupado e empolgado, 
+			cavalheiresco e não violento. Seu encontro com a jovem Condessa de Cagliostro, 
+			cujas tendências criminosas superam as suas próprias, 
+			lhe dará a formação necessária e se transformará de um simples batedor de carteiras a um ladrão
+			de primeira categoria, pronto para feitos mais grandiosos. Na busca de um fabuloso tesouro, 
+			perdido dos reis da França, irá encontrar o seu passado.
+				<br><h5>Design</h5>
+ 			Criado por Shigenori Soejima, ele quis dar uma vibe mais "Old School", 
+			suas asas representam a capa de um ladrão que as pessoas tinham em mente e 
+			que um ladrão pode ir aonde ele quiser <br>
+				<h5>Seu Primeiro Despertar</h5>`;
+		}
+		else if (number == 2) {
+			imagem.src = '../Imagens/Personas/Goemon.png';
+			text.innerHTML = `<h1 class='nome2'>Goemon</h1> <h4>Arcana  Emperor</h4>
+			Baseado em Ishika Goemon, ladrão que roubava dos ricos e dava aos pobres no Japão no 
+			período Azuchi-Momoyama(1573-1603) que começou com um encontro entre dois Grandes 
+			Samurais e Shoguns. <br>
+				<h5>Sobre Ishika Goemon</h5>
+ 			Ele é mencionado em apenas duas fontes e as duas são depois da sua morte. <br>
+			A primeira foi que, Toyotomi Hideyoshi detalhou a tentativa de assassinato de Goemon a 
+			sua pessoa, sua captura e sua execução publica ao lado de seu filho que foram fervidos 
+			até a morte, dando ligação ao segundo registro Pedro de Morejon que descreveu a morte. <br>
+			Ao passar do tempo sua história foi expandida fazendo ele virar um héroi similar á Robin 
+			Hood, historias do seculo 19 e 20 dizem que ele tambem é um grande ninja, isso o tornou 
+			famoso ganhando filmes, animes e jogos como Ganbare Goemon Series.<br>
+				<h5>Seu Primeiro Despertar</h5>`;
+
+		}
+		else if (number == 3) {
+			imagem.src = '../Imagens/Personas/CaptainKid.png';
+			text.innerHTML = `<h1 class='nome3'>Captain Kid</h1> <h4>Arcana  Strenght</h4>`;
+		}
+		else if (number == 4) {
+			imagem.src = '../Imagens/Personas/Zorro.png';
+			text.innerHTML = `<h1 class='nome4'>Zorro</h1> <h4>Arcana </h4>`;
+		}
+		else if (number == 5) {
+			imagem.src = '../Imagens/Personas/Carmen.png';
+			text.innerHTML = `<h1 class='nome5'>Carmen</h1> <h4>Arcana  Lovers</h4>`;
+		}
+		else if (number == 6) {
+			imagem.src = '../Imagens/Personas/Milady.png';
+			text.innerHTML = `<h1 class='nome6'>Milady</h1> <h4>Arcana </h4>`;
+		}
+	}
+</script>

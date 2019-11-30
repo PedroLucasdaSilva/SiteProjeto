@@ -1,0 +1,141 @@
+*{margin:0}
+@font-face{
+    font-family: 'Persona';
+    src: url(../Fonte/PersonifiedUXRegular.ttf) format('truetype');
+}
+
+body{
+    background-image: url(../Imagens/VelvetRoom.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+/* header {
+    position: fixed;
+    background-color:red;
+    font-family: 'Persona'; 
+    z-index: 99;
+    width: 100%; 
+}
+
+li{
+    float: right;
+    line-height: 3vw;
+    display: block;
+    position: relative;
+
+}
+li a{
+    text-decoration: none;
+    padding: 2vw;
+    color: black;
+    text-align: center;
+    transition: 0.6s;  
+}
+li a:hover{
+    border-radius: 10%;
+    background-color: white;
+    transition: 0.7s ease-in-out;
+
+    
+}
+ul{
+    margin-top: 1vw;
+    margin-left: 12vw;
+}
+.hat{
+    margin-top: 1vw;
+    width:7vw;
+    height: 4vw;
+}
+.grupo{
+    margin-top: 3px;
+    width: 20vw;
+    height:5vw; 
+    position: relative;
+    float: right;
+}
+.menu ul {
+    float: right;
+} */
+.centro{
+    display: flex;
+    margin-top: 3vw;
+    margin-left: 20vw;
+    margin-right: 26vw;
+}
+.box{
+    width: 100%;
+    margin-right: 3vw;
+    border-radius: 2vw;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.text{
+    color:whitesmoke;
+    font-size: 25px;
+    margin-left: 1vw;
+    font-family: 'Lato', sans-serif;
+}
+.nome1{
+    font-family:'tangerine', cursive ;
+    font-size: 4vw;
+}
+.nome2{
+    font-family: 'Rock Salt',cursive;
+    font-size: 4vw;
+}
+.nome3{
+    font-family: 'Rock Salt',cursive;
+    font-size: 4vw;
+}
+.nome4{
+    font-family: 'Damion', cursive;
+    font-size: 4vw;
+}
+.nome5{
+    font-family:'tangerine', cursive;
+    font-size: 4vw;
+}
+.nome6{
+    font-family:'Great Vibes', cursive;
+    font-size: 4vw;
+}
+.text h5{
+    font-size: 2vw;
+    margin-left:2vw;
+}
+.text h4{
+    margin-left: 8vw;
+    font-size: 2vw;
+    color: whitesmoke;
+}
+
+.imagem{
+    position: fixed;
+    margin-left: 49vw;
+    width: 30vw;
+    height: 36vw;
+    margin-top: 1vw;
+}
+.botao{
+    margin-left: 21vw;
+    margin-top: 34vw;
+    background-color: rgba(0, 0, 0, 0.0);
+    font-family:'Persona';
+    font-size: 26px;
+    border-color: rgba(0, 0, 0, 0.0);
+    border-radius: 4vw;
+    width: 22vw;
+    height: 9vw;
+    color:white;
+}
+.botao:hover{
+    transition: 1s;
+    color: red;
+    transform: scale(1.1);
+    background-image: url(../Imagens/chapeu.gif);
+    background-size: 9vw;
+    background-repeat: no-repeat;
+    background-position-x: right;
+}
