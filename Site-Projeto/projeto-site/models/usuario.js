@@ -14,23 +14,23 @@ module.exports = (sequelize, DataTypes) => {
 			autoIncrement: true
 		},		
 		nome: {
-			field: 'nome',
+			field: 'Nome',
 			type: DataTypes.STRING,
 			allowNull: false
 		},
 		login: {
-			field: 'login',
+			field: 'Email',
 			type: DataTypes.STRING,
 			allowNull: false
 		},
 		senha: {
-			field: 'senha',
+			field: 'Senha',
 			type: DataTypes.STRING,
 			allowNull: false
 		}
 	}, 
 	{
-		tableName: 'usuario', 
+		tableName: 'Usuario', 
 		freezeTableName: true, 
 		underscored: true,
 		timestamps: false,
