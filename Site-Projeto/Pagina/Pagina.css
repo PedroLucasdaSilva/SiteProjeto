@@ -59,7 +59,7 @@ ul{
     float: right;
 } */
 .centro{
-    display: flex;
+    position: absolute;
     margin-top: 3vw;
     margin-left: 20vw;
     margin-right: 26vw;
@@ -70,16 +70,19 @@ ul{
     border-radius: 2vw;
     background-color: rgba(0, 0, 0, 0.6);
 }
-
+.audio{
+    width: 18vw;
+}
 .text{
     color:whitesmoke;
-    font-size: 25px;
+    font-size: 22px;
     margin-left: 1vw;
+    margin-right: 2vw;
     font-family: 'Lato', sans-serif;
 }
 .nome1{
     font-family:'tangerine', cursive ;
-    font-size: 4vw;
+    font-size: 8vw;
 }
 .nome2{
     font-family: 'Rock Salt',cursive;
@@ -90,32 +93,46 @@ ul{
     font-size: 4vw;
 }
 .nome4{
-    font-family: 'Damion', cursive;
-    font-size: 4vw;
+    font-family: 'Tangerine', cursive;
+    font-size: 8vw;
 }
 .nome5{
     font-family:'tangerine', cursive;
-    font-size: 4vw;
+    font-size: 8vw;
 }
 .nome6{
     font-family:'Great Vibes', cursive;
-    font-size: 4vw;
+    font-size: 8vw;
 }
 .text h5{
     font-size: 2vw;
-    margin-left:2vw;
+    margin-left:1vw;
 }
 .text h4{
-    margin-left: 8vw;
-    font-size: 2vw;
+    margin-left: 24vw;
+    margin-top: 3vw;
+    position: absolute;
+    font-size: 4vw;
     color: whitesmoke;
+    font-family: 'tangerine',cursive;
+}
+.audio{
+    position: fixed;
+    margin-right: 80vw;
+}
+.video{
+    height: 23vw;
+    width: 40vw;
+    border-radius: 3px;
+    margin-left: 6vw;
+    margin-bottom: 3vw;
 }
 
 .imagem{
     position: fixed;
     margin-left: 49vw;
-    width: 30vw;
-    height: 36vw;
+    width: 33vw;
+    height: 44vw;
     margin-top: 1vw;
 }
 .botao{
