@@ -1,0 +1,163 @@
+*{margin:0}
+
+@font-face{
+    font-family: 'Persona';
+    src: url(../../Fonte/PersonifiedUXRegular.ttf) format('truetype');
+}
+
+body{
+    background-image: url(../../Imagens/Fundo.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    background-position-y: -5vw;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.box {
+    width: 400px;
+    height: 500px;
+    text-align: center;
+    background-position: center;
+    background-size: cover; 
+    background-color: rgba(0, 0, 0, 0.6);
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.nome{
+    margin-top: 8vw;
+    width: 82%;
+    border-radius: 30vw;
+    height: 30px; 
+    border: 1px solid #000000; 
+    text-align: center; 
+    font-family: 'Persona';
+}
+
+.email {
+    font-family: 'Persona';
+    margin-top: 30px;
+    border-radius: 30vw;
+    width: 82%;
+    height: 30px;
+    border: 1px solid #000000; 
+    text-align: center; 
+
+}
+
+.senha{
+    font-family: 'Persona';
+    margin-top: 30px;
+    border-radius: 30vw;
+    width: 82%;
+    height: 30px;
+    border: 1px solid #000000; 
+    text-align: center;   
+}
+
+.confirmarsenha{
+    font-family: 'Persona';
+    margin-top: 30px;
+    border-radius: 30vw;
+    width: 82%;
+    height: 30px; 
+    border: 1px solid #000000; 
+    text-align: center; 
+}
+
+.box button {
+    font-family: 'Persona';
+    margin-top: 30px;
+    font-size: 14px;  
+    color: black;
+    background:red;
+    border-radius: 10px;
+    border: 1px solid #000000; 
+    width: 62%;
+    height: 40px;
+    transition-duration: 0.5s;
+}
+
+.box button:hover{
+    color:red;
+    opacity: 1;
+    transform: scale(1.1);
+    background-color: black;
+    transition-duration: 0.5s;
+}
+
+
+/** Style da box 2 **/
+
+.box_2 {
+    width: 400px;
+    height: 500px;
+    text-align: center;        
+    background-color: rgba(0, 0, 0, 0.6);
+    background-position: center;
+    background-size: cover;
+    border-left: 1px solid black;     
+    border-top: 1px solid black;     
+    border-bottom: 1px solid black;     
+    border-right: 1px solid black;     
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.email_box2 {
+    font-family: 'Persona';
+    margin-top: 150px;
+    width: 82%;
+    height: 30px;
+    border-radius: 30vw;
+    background-color: white; 
+    border: 1px solid #000000; 
+    text-align: center; 
+
+}
+
+.senha_box2 {
+    font-family: 'Persona';
+    border-radius: 30vw;
+    margin-top: 40px;
+    width: 82%;
+    height: 30px;
+    background-color: white;
+    border: 1px solid #000000; 
+    text-align: center;
+}
+
+.box_2 button {
+    font-family: 'Persona';
+    margin-top: 60px;
+    font-size: 14px;  
+    color: black;
+    background:red;
+    border-radius: 10px;
+    border: 1px solid #000000; 
+    width: 62%;
+    height: 40px;
+    transition-duration: 0.5s;
+
+}
+
+.box_2 button:hover {
+    transform: scale(1.1);
+    background-color: black;
+    color:red; 
+    transition-duration: 0.5s;
+}
+
+::placeholder {
+    color: rgba(126, 126, 126, 1);
+}
