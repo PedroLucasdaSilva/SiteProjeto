@@ -1,11 +1,11 @@
 *{margin:0}
 @font-face{
     font-family: 'Persona';
-    src: url(../Fonte/PersonifiedUXRegular.ttf) format('truetype');
+    src: url(./Fonte/PersonifiedUXRegular.ttf) format('truetype');
 }
 
 body{
-    background-image: url(../Imagens/VelvetRoom.jpg);
+    background-image: url(./Imagens/VelvetRoom.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     background-attachment: fixed;

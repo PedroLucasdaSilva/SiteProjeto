@@ -16,7 +16,6 @@
                 <input placeholder="Phantom`s Code" type="text" class="nome" id="nome" name="nome" required>
                 <input placeholder="Email" type="email" class="email"  name="login">
                 <input placeholder="Senha" type="password" class="senha"  name="senha" required minlength="8">
-                <input placeholder="Confirmar Senha" type="password" class="confirmarsenha" required minlength="8">
                 <button class="login" id="btn_cadastrar">Se Tornar um Phantom Thief</button>
             </form>
         </div>
@@ -26,9 +25,9 @@
         <audio src="../../Musicas/1-09. Beneath the Mask -instrumental version-.mp3" autoplay loop></audio>
         <div class="box_2">
             <form id="form_login" method="post" onsubmit="return entrar()">
-                <input placeholder='E-mail'  class="email_box2" name="login">
+                <input placeholder='Phantom`s Code'  class="email_box2" name="login">
                 <input placeholder="Senha" type="password" class="senha_box2" name="senha" required minlength="8"><br>
-                <button class="login" onclick="entrar()">Take Your Heart</button>
+                <button class="login" id="btn_entrar"onclick="entrar()">Take Your Heart</button>
             </form>
         </div>
     </div>
@@ -49,13 +48,14 @@
                 
                 if (response.ok) {
     
-                    window.location.href='Cadastro.html';
+                    // window.location.href='';
+                    alert("Bem vindo aos Phantom Thieves");
     
                 } else {
     
                     console.log('Erro de cadastro!');
                     response.text().then(function (resposta) {
-                        // div_erro.innerHTML = resposta;
+                        alert(resposta);
                     });
                     // finalizar_aguardar();
                 }
@@ -64,19 +64,7 @@
             return false;
         }
     
-        function aguardar() {
-            btn_entrar.disabled = true;
-            img_aguarde.style.display='block';
-            div_erro.style.display='none';
-        }
-    
-        function finalizar_aguardar() {
-            btn_entrar.disabled = false;
-            img_aguarde.style.display='none';
-            div_erro.style.display='block';
-        }
         function entrar() {
-        aguardar();
         var formulario = new URLSearchParams(new FormData(form_login));
         fetch("/usuarios/autenticar", {
             method: "POST",
@@ -90,7 +78,7 @@
                     sessionStorage.login_usuario_meuapp = json.login;
                     sessionStorage.nome_usuario_meuapp = json.nome;
                     
-                    window.location.href = '../../Pagina/Pagina.html';
+                    window.location.href = 'Pagina.html';
                 });
 
             } else {
@@ -99,7 +87,6 @@
 
                 response.text().then(texto => {
                     console.error(texto);
-                    finalizar_aguardar(texto);
                 });
             }
         });
